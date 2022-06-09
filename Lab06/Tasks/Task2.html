@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 2</title>
+    <script language="JavaScript" type="text/javaScript">
+    
+    function sum12(){
+			var x = new Number(document.getElementById("number1").value);
+			var y = new Number(document.getElementById("number2").value);
+			var res = x + y;
+			document.getElementById("ans").innerHTML = res;
+			return;
+		}
+		function sub12(){
+			var x = new Number(document.getElementById("number1").value);
+			var y = new Number(document.getElementById("number2").value);
+			var res = x - y;
+			document.getElementById("ans").innerHTML = res;
+			return;
+		}
+		function mul12(){
+			var x = new Number(document.getElementById("number1").value);
+			var y = new Number(document.getElementById("number2").value);
+			var res = x * y;
+			document.getElementById("ans").innerHTML = res;
+			return;
+		}
+		function div12(){
+			var x = new Number(document.getElementById("number1").value);
+			var y = new Number(document.getElementById("number2").value);
+			var res = x / y;
+			document.getElementById("ans").innerHTML = res;
+			return;
+		}
+    </script>
+    
+</head>
+<body>
+    <form name="assignment">
+		<table>
+			<tr>
+				<td align="right"> First Number </td>
+				<td><input type="text" name="num1" id="number1"/></td>
+			</tr>
+			<tr>
+				<td align="right"> Second Number </td>
+				<td><input type="text" name="num2" id="number2"/></td>
+			</tr>
+			<tr>
+				<td align="right"> Answer </td>
+				<td><output id="ans"/></td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td><input type="button" value="Sum" name="sum" onclick="sum12()"></td>
+				<td><input type="button" value="Subtract" name="sub" onclick="sub12()"></td>
+				<td><input type="button" value="Multiply" name="mul" onclick="mul12()"></td>
+				<td><input type="button" value="Divide" name="di" onclick="div12()"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 1</title>
+    <script language="JavaScript" type="text/javaScript">
+        function sum_t() {
+            var t = document.getElementById("t")
+            for(var i=0;i<=20;i++) {
+                let row = t.rows[i];
+                var num1 = parseInt(row.cells[0].innerHTML)
+                var num2 = parseInt(row.cells[1].innerHTML)
+                row.cells[2].innerHTML = num1 + num2
+            }
+        }
+    </script>
+</head>
+<body>
+    <table id="t" border="1">
+        
+        <tr>
+            <td id="num1_1"> 1 </td>
+            <td id="num2_1"> 2 </td>
+            <td id="sum_1"> </td>
+        </tr>
+        <tr>
+            <td id="num1_2">3</td>
+            <td id="num2_2">4</td>
+            <td id="sum_2"></td>
+        </tr>
+        <tr>
+            <td id="num1_3">5</td>
+            <td id="num2_3">6</td>
+            <td id="sum_3"></td>
+        </tr>
+        <tr>
+            <td id="num1_4">7</td>
+            <td id="num2_4">8</td>
+            <td id="sum_4"></td>
+        </tr>
+        <tr>
+            <td id="num1_5">9</td>
+            <td id="num2_5">10</td>
+            <td id="sum_5"></td>
+        </tr>
+        <tr>
+            <td id="num1_6">11</td>
+            <td id="num2_6">12</td>
+            <td id="sum_6"></td>
+        </tr>
+        <tr>
+            <td id="num1_7">13</td>
+            <td id="num2_7">14</td>
+            <td id="sum_7"></td>
+        </tr>
+        <tr>
+            <td id="num1_8">15</td>
+            <td id="num2_8">16</td>
+            <td id="sum_8"></td>
+        </tr>
+        <tr>
+            <td id="num1_9">17</td>
+            <td id="num2_9">18</td>
+            <td id="sum_9"></td>
+        </tr>
+        <tr>
+            <td id="num1_10">19</td>
+            <td id="num2_10">20</td>
+            <td id="sum_10"></td>
+        </tr>
+        <tr>
+            <td id="num1_11">21</td>
+            <td id="num2_11">22</td>
+            <td id="sum_11"></td>
+        </tr>
+        <tr>
+            <td id="num1_12">23</td>
+            <td id="num2_12">24</td>
+            <td id="sum_12"></td>
+        </tr>
+        <tr>
+            <td id="num1_13">25</td>
+            <td id="num2_13">26</td>
+            <td id="sum_13"></td>
+        </tr>
+        <tr>
+            <td id="num1_14">27</td>
+            <td id="num2_14">28</td>
+            <td id="sum_14"></td>
+        </tr>
+        <tr>
+            <td id="num1_15">29</td>
+            <td id="num2_15">30</td>
+            <td id="sum_15"></td>
+        </tr>
+        <tr>
+            <td id="num1_16">31</td>
+            <td id="num2_16">32</td>
+            <td id="sum_16"></td>
+        </tr>
+        <tr>
+            <td id="num1_17">33</td>
+            <td id="num2_17">34</td>
+            <td id="sum_17"></td>
+        </tr>
+        <tr>
+            <td id="num1_18">35</td>
+            <td id="num2_18">36</td>
+            <td id="sum_18"></td>
+        </tr>
+        <tr>
+            <td id="num1_19">37</td>
+            <td id="num2_19">38</td>
+            <td id="sum_19"></td>
+        </tr>
+        <tr>
+            <td id="num1_20">39</td>
+            <td id="num2_20">40</td>
+            <td id="sum_20"></td>
+        </tr>
+    </table>
+    <input type="submit" onclick="sum_t(); return false" value="Sum"> 
+</body>
+</html>

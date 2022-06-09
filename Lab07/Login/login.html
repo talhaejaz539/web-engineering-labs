@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <script language="JavaScript" type="text/javaScript">
+        function validate() {
+            var flag = 1
+            if(document.islogin.login.value == "") {
+                document.getElementById('login').innerHTML = "User name can't be empty!!"		
+			    flag = -1
+            }
+            if(document.islogin.password.value == "") {
+                document.getElementById('pass').innerHTML = "Password can't be empty!!"		
+			    flag = -1
+            }
+            if (flag==1) 
+		        return true
+	        else
+		        return false
+        }
+    </script>
+</head>
+<body>
+    <form name="islogin" method="post" action="Login" onsubmit="return validate()">
+        Login ID
+        <input type="text" placeholder="Username" name="login"><div id="login" style="color: red; text-align: center;"></div> 
+        Password
+        <input type="password" placeholder="Password" name="password"> <div id="pass" style="color: red; "></div> 
+        <input type="submit" value="Sigin-in">
+    </form>
+</body>
+</html>
